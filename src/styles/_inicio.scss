@@ -1,0 +1,36 @@
+@use 'variaveis';
+
+.inicio {
+    padding: 5.6vw;
+    min-height: 80vh;
+    background-image: url(../images/fundo_jogos_vorazes.png);
+    text-align:left;
+    background-size: cover;
+
+    @media (max-width: 768px) {
+        padding-top: calc(50vw + 25px);
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin-top: 0;
+    }
+
+    &__content {
+        max-width: 640px;
+        margin-top: 580px;
+
+        @media (max-width: 768px) {
+            margin-top: 10px;
+        }
+
+        .tittle--big {
+            margin-bottom: 32px;
+
+        }
+        
+        p {
+            margin-top: 16px;
+            margin-bottom: 20px;
+
+        }
+    }
+}
